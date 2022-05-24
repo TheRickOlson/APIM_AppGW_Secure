@@ -5,6 +5,16 @@ The high level diagram for what we're going to build looks like this:
 
 ![image](https://user-images.githubusercontent.com/16612216/170125643-570194b2-5424-429d-90a8-85910393e356.png)
 
+PreRequisites:
+- Generate four self-signed certificates
+  - I used `azure-apim.net` as the private DNS zone name
+  - My four self-signed certificates were for `api`, `management`, `portal` and `scm`
+  - All certs were saved in a `resources` subfolder
+  - TODO: Add reference links
+
+
+
+
 The VNET is not peered with anything, and we're using self-signed certificates in this POC in order to get it to work.  For testing, I modified the local hosts file of a test VM, taking the public IP of the Application Gateway and mapping that to the four FQDN's representing the APIM endpoints (portal, management, api and scm).
 
 As of v1.0 of this, deployment consists of the following steps:
@@ -17,5 +27,5 @@ Steps 1 and 2 are relatively quick.  Step 3 can take upwards of an hour to deplo
 
 Disclaimers:
 - I am not a dev
-- I identify as [https://ironscripter.us/factions/](Battle Faction)
+- I identify as [Battle Faction](https://ironscripter.us/factions/)
 - I'm constantly learning, so what you see here is a product of my own learning
