@@ -13,3 +13,9 @@ As of v1.0 of this, deployment consists of the following steps:
 - Step 3: Modify values in `dev-config.json` and issue the following new build request: `New-AzResourceGroupDeployment -ResourceGroupName $rsg -TemplateFile .\configure.bicep -TemplateParameterFile .\configurations\dev-config.json`
 
 Steps 1 and 2 are relatively quick.  Step 3 can take upwards of an hour to deploy.
+
+
+Disclaimers:
+- I am not a dev
+- I identify as [https://ironscripter.us/factions/](Battle Faction)
+- I'm constantly learning, so what you see here is a product of my own learning
