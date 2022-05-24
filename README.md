@@ -12,7 +12,20 @@ PreRequisites:
   - All certs were saved in a `resources` subfolder
   - TODO: Add reference links
 
-
+JSON parameter definitions:
+- `dev.json`
+  - `location`   : Azure location to build the components
+  - `prefix`     : A string prefix/suffix to be used in building out the components (example, if `prefix = "foo"` then the keyvault would be named `kv-foo` when built)
+  - `groupId`    : GUID for a group that you are a member of - this is used to grant yourself the ability to upload certificates to keyvault
+  - `domainName` : Domain name for the certificates and private DNS
+- `dev-config.json`
+  - `location`   : Azure location to build the components
+  - `prefix`     : A string prefix/suffix to be used in building out the components (example, if `prefix = "foo"` then the keyvault would be named `kv-foo` when built)
+  - `domainName` : Domain name for the certificates and private DNS
+  - `gatewayEndpoint` : Name of the APIM Gateway Endpoint
+  - `managementEndpoint` : Name of the APIM Management Endpoint
+  - `devPortalEndpoint` : Name of the APIM Developer Portal Endpoint
+  - `scmEndpoint` : Name of the APIM SCM Endpoint
 
 
 The VNET is not peered with anything, and we're using self-signed certificates in this POC in order to get it to work.  For testing, I modified the local hosts file of a test VM, taking the public IP of the Application Gateway and mapping that to the four FQDN's representing the APIM endpoints (portal, management, api and scm).
