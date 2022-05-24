@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "westus"
+        },
+        "prefix": {
+            "value": "apimtest"
+        },
+        "groupId": {
+            "value": "12345678-90ab-cdef-1234-567890abcdef"
+        },
+        "domainName": {
+            "value": "azure-apim.net"
+        }
+    }
+}
