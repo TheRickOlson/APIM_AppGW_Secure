@@ -274,7 +274,7 @@ resource applicationGateway 'Microsoft.Network/applicationGateways@2021-08-01' =
           }
           protocol: 'Https'
           sslCertificate: {
-            id: resourceId('Microsoft.Network/applicationGateways/sslCertificates',appGatewayName,'cert-${gatewayEndpoint}') /* no clue if this will work*/
+            id: resourceId('Microsoft.Network/applicationGateways/sslCertificates',appGatewayName,'cert-${gatewayEndpoint}')
           }
         }
       }
@@ -290,7 +290,7 @@ resource applicationGateway 'Microsoft.Network/applicationGateways@2021-08-01' =
           }
           protocol: 'Https'
           sslCertificate: {
-            id: resourceId('Microsoft.Network/applicationGateways/sslCertificates',appGatewayName,'cert-${managementEndpoint}') /* no clue if this will work*/
+            id: resourceId('Microsoft.Network/applicationGateways/sslCertificates',appGatewayName,'cert-${managementEndpoint}')
           }
         }
       }
@@ -306,7 +306,7 @@ resource applicationGateway 'Microsoft.Network/applicationGateways@2021-08-01' =
           }
           protocol: 'Https'
           sslCertificate: {
-            id: resourceId('Microsoft.Network/applicationGateways/sslCertificates',appGatewayName,'cert-${devPortalEndpoint}') /* no clue if this will work*/
+            id: resourceId('Microsoft.Network/applicationGateways/sslCertificates',appGatewayName,'cert-${devPortalEndpoint}')
           }
         }
       }
@@ -322,7 +322,7 @@ resource applicationGateway 'Microsoft.Network/applicationGateways@2021-08-01' =
           }
           protocol: 'Https'
           sslCertificate: {
-            id: resourceId('Microsoft.Network/applicationGateways/sslCertificates',appGatewayName,'cert-${scmEndpoint}') /* no clue if this will work*/
+            id: resourceId('Microsoft.Network/applicationGateways/sslCertificates',appGatewayName,'cert-${scmEndpoint}')
           }
         }
       }
